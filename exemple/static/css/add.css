@@ -1,0 +1,26 @@
+/*
+    Author : Thibault Cheneviere
+    Mail : thibault.cheneviere@telecomnancy.eu
+    Date : 13/12/2021
+*/
+/* Start CSS for add.html */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+.add-container {
+    margin-top: 50px;
+    margin-left: 12.5vw;
+    width: 75vw;
+}
+
+.target-url {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.short-code {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* End CSS for add.html */

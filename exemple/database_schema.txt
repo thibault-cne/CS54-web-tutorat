@@ -1,0 +1,8 @@
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE TABLE urls 
+    (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        url TEXT,
+        shortCode TEXT UNIQUE,
+        visitNumber INTEGER
+    );

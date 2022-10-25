@@ -1,0 +1,72 @@
+/*
+    Author : Thibault Cheneviere
+    Mail : thibault.cheneviere@telecomnancy.eu
+    Date : 13/12/2021
+*/
+/* Start CSS for display.html */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+html {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300 !important
+}
+
+.navbar {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300
+}
+
+.alert {
+    margin-top: 10px;
+    width: 65%;
+}
+
+.navbar-custom {
+    background-color: rgb(14, 11, 11);
+    color: #fff;
+}
+
+footer {
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    margin-top: 50px;
+}
+
+.table-head {
+    background-color: rgb(14, 11, 11);
+    color: #fff;
+}
+
+.custom-table {
+    margin-left: 12.5vw;
+    margin-top: 6%;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card-1 {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #fff
+}
+
+.custom-btn {
+    color: red !important;
+    border: 1px solid red !important;
+    border-left: transparent !important;
+}
+
+.trash-icon {
+    border: 1px solid red !important;
+    border-right: transparent !important;
+}
+
+/* End CSS for display.html */

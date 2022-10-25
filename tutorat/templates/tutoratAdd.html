@@ -1,0 +1,31 @@
+<!--
+    Author : Thibault Cheneviere
+    Mail : thibault.cheneviere@telecomnancy.eu
+    Date : 25/10/2022
+-->
+
+{% extends 'tutoratDisplay.html' %}
+
+{% block header %}
+    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/add.css') }}">
+{% endblock header %}
+
+{% block container %}
+    <div class="add-container">
+        <h1>Shorten a URL</h1>
+        <form action="{{ url_for('addCodeAdd') }}" method="POST">
+            <div class="target-url">
+                <h4 class="form-label">Target URL</h4>
+                <input class="form-control" type="text" name="target_url" placeholder="Enter the url to be shorten">
+            </div>
+            <div class="short-code">
+                <h4>Short Code</h4>
+                <input class="form-control" type="text" name="short_code" placeholder="Enter the short code">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+{% endblock container %}

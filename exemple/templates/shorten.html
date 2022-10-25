@@ -1,0 +1,27 @@
+<!--
+    Author : Thibault Cheneviere
+    Mail : thibault.cheneviere@telecomnancy.eu
+    Date : 13/12/2021
+-->
+
+{% extends 'display.html' %}
+
+{% block header %}
+    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/shorten.css') }}">
+{% endblock header %}
+
+{% block container %}
+    <div class="add-container">
+        <h1>Shorten a URL</h1>
+        <form action="{{ url_for('addCodeBP.addCodeShorten') }}" method="POST">
+            <div class="target-url">
+                <h4 class="form-label">Target URL</h4>
+                <input class="form-control" type="text" name="target_url" placeholder="Enter the url to be shorten">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+{% endblock container %}
